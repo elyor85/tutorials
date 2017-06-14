@@ -11,7 +11,7 @@ import java.io.File;
  * Created by elyor on 27.05.2017.
  */
 @Configuration
-@ComponentScan("com.baeldung.demo")
+@ComponentScan
 @PropertySource("classpath:application.properties")
 public class MainApp {
     @Value("${source.dir}")

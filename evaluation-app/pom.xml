@@ -13,21 +13,26 @@
     <name>Author Evaluation App</name>
     <description>Initial onboarding evaluation application: Types of Dependency Injection in Spring</description>
 
+    <properties>
+        <spring.version>4.2.3.RELEASE</spring.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.2.3.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.2.3.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>4.2.3.RELEASE</version>
+            <version>${spring.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
