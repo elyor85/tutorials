@@ -1,0 +1,33 @@
+package com.baeldung.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+/**
+ * Created by elyor on 27.05.2017.
+ */
+@Component
+public class SimpleDirectorySynchronizerV1 extends BaseSimpleDirectorySynchronizer {
+    private File sourceDirectory;
+    private File destinationDirectory;
+
+    @Autowired
+    public SimpleDirectorySynchronizerV1(File sourceDirectory, File destinationDirectory) {
+        System.out.println("Using constructor injection");
+
+        this.sourceDirectory = sourceDirectory;
+        this.destinationDirectory = destinationDirectory;
+    }
+
+    public File getSourceDirectory() {
+        return sourceDirectory;
+    }
+
+    public File getDestinationDirectory() {
+        return destinationDirectory;
+    }
+}
